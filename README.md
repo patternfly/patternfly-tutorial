@@ -1,4 +1,4 @@
-# PatternFly Quickstart
+# PatternFly Tutorial
 
 ```
 npm install

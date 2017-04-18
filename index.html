@@ -1,106 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Patternfly Quickstart</title>
+<head>
+  <meta charset="utf-8">
+  <title>Patternfly Quickstart</title>
 
-    <!-- PatternFly Styles -->
-     <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly.min.css">
-     <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly-additions.min.css">
+  <!-- PatternFly Styles -->
+  <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly.min.css">
+  <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly-additions.min.css">
 
+  <!-- Bootstrap base + PatternFly extensions + Your styles -->
+  <!-- <link rel="stylesheet" href="css/mystyles.css"> -->
 
-    <!-- Bootstrap base + PatternFly extensions + Your styles -->
-    <!-- <link rel="stylesheet" href="css/mystyles.css"> -->
+  <!-- JS -->
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="patternfly.min.js"></script>
 
-  </head>
-  <body>
+  <!-- C3, D3 - Charting Libraries -->
+  <script src="c3.min.js"></script>
+  <script src="d3.min.js"></script>
 
-    <nav class="navbar navbar-default navbar-pf" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">
-          <img src="node_modules/patternfly/dist/img/brand.svg" alt="PatternFly Enterprise Application" />
-        </a>
-      </div>
-      <div class="collapse navbar-collapse navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-utility">
-          <li>
-            <a href="#">Status</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="pficon pficon-user"></span>
-              Brian Johnson <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#">Link</a>
-              </li>
-              <li>
-                <a href="#">Another link</a>
-              </li>
-              <li>
-                <a href="#">Something else here</a>
-              </li>
-              <li class="divider"></li>
-              <li class="dropdown-submenu">
-                <a tabindex="-1" href="#">More options</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">Link</a>
-                  </li>
-                  <li>
-                    <a href="#">Another link</a>
-                  </li>
-                  <li>
-                    <a href="#">Something else here</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li>
-                    <a href="#">Separated link</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">One more separated link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#">One more separated link</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-primary">
-          <li>
-            <a href="#">First Link</a>
-          </li>
-          <li class="active">
-            <a href="#">Another Link</a>
-          </li>
-          <li>
-            <a href="#">And Another</a>
-          </li>
-          <li>
-            <a href="#">As a General Rule</a>
-          </li>
-          <li>
-            <a href="#">Five to Seven Links</a>
-          </li>
-          <li>
-            <a href="#">Is Good</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <script src="jquery.matchHeight-min.js"></script>
 
+       <script>
+       $(function() {
+         // matchHeight the contents of each .card-pf and then the .card-pf itself
+         $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
+         $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+         $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
+         $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
+         // initialize tooltips
+         $('[data-toggle="tooltip"]').tooltip();
+       });
+       </script>
 
-  </body>
+</head>
+
+<body>
+
+</body>
 </html>

@@ -1,3 +1,6 @@
+# Build CSS
+css/
+
 # Ignore Project files
 *.sublime-workspace
 *.sublime-project
