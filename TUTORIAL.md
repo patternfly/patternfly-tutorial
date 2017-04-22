@@ -2,9 +2,9 @@
 
 This guide will help you set up PatternFly and start a PatternFly dashboard.
 
-The first step is to fork and clone the quick start repo:
+The first step is to fork and clone the tutorial repo:
 
-https://github.com/andresgalante/patternfly-quickstart
+https://github.com/patternfly/patternfly-tutorial
 
 Once you have it, `cd` into your project folder and install the dependencies:
 
@@ -12,9 +12,10 @@ Once you have it, `cd` into your project folder and install the dependencies:
 npm install
 ```
 
-This will get you patternfly and all the dev dependencies.
+This will download PatternFly and all the tutorial's dependencies.
 
-Now start browsersync by running
+We will use the browsersync tool to serve and refresh our web content while we are working through the tutorial.
+Start browsersync by running:
 
 ```bash
 gulp
@@ -24,16 +25,16 @@ This will start a server at [http://localhost:3000/](http://localhost:3000/) and
 
 ## PatternFly CSS
 
-Open `index.html` on your favorite text editor. You'll notice that you are importing `patternfly.min.css` and `patternfly-additions-min.css`
+Open `index.html` on your favorite text editor. In the HTML `<head>` tag, you will notice that we are importing `patternfly.min.css` and `patternfly-additions-min.css`
 
-Patternfly is based on bootstrap. patternfly.css is our customizations of bootstrap styles and additions is everything else we've added to support out enterprise usecases.
+Patternfly is based on bootstrap. _patternfly.css_ is our customization of bootstrap styles and _patternfly-additions.css_ is everything we've added to support enterprise usecases.
 
 ```html
   <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly.min.css">
   <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly-additions.min.css">
 ```
 
-This page is ready to use any patternfly component. You cna go to ther website, copy any spinnet and use it. But I'll guide you step by step to build a dashboard, and customize patternfly.
+This page is ready to use with any PatternFly component. You can go to the PatternFly website, copy any spinnet and use it. But we'll guide you step-by-step showing you how to build a dashboard, and customize PatternFly.
 
 ### The Grid
 
@@ -102,11 +103,11 @@ To initiate the card layout and adjust the spaces we'll add some patternfly spec
 
 ### Navigation
 
-For this example I'll be using a simple horizontal navigation, but keep in mind you can nest more levels or even use a vertical nav.
+For this example we'll be using a simple horizontal navigation, but keep in mind you can nest more levels or even use a vertical nav.
 
 PatternFly horizontal navigation is a modified version of Bootstrap navbar.
 
-Go to the beguining of the document, copy and paste this snippet:
+Go to the beginning of the document, copy and paste this snippet:
 
 ```html
 <!-- PatternFly Horizontal Nav -->
@@ -199,9 +200,9 @@ Go to the beguining of the document, copy and paste this snippet:
 
 ### Aggregated status cards
 
-Aggregated status cards comes in diferent flavors. For this example we'll use the "Mini Card Alternate". We have six slots to add them.
+Aggregated status cards come in diferent flavors. For this example we'll use the "Mini Card Alternate" flavor. We have six slots to add them.
 
-Copy and paste these snippets on the 6 spaces for Aggregated status cards, they are all slighly diferent but for the sake of the example it's ok if you repeat them:
+Copy and paste these snippets on the 6 spaces for Aggregated status cards, they are all slighly different but for the sake of the example it's ok if you repeat them:
 
 ```html
 <!-- Aggregated status card -->
@@ -248,7 +249,7 @@ Copy and paste these snippets on the 6 spaces for Aggregated status cards, they 
 
 ### Utilization Trend Card
 
-We'll add 2 typs of utilization cards, let's start with trend.
+We'll add 2 types of utilization cards, let's start with the trend card.
 
 Look for the next avaliable column, it's labled as `Utilization Trend Card`, and paste this snippet:
 
@@ -427,11 +428,11 @@ Look for the next avaliable column, it's labled as `Utilization Trend Card`, and
 </div>
 ```
 
-This snippet container charts, don't worry that they don't work yet, we'll add the javascript later.
+This snippet container charts. Don't worry that they don't work yet, we'll add the javascript later.
 
 ### Utilization Bar Card
 
-Now it's the trun to add an Utilization Bar Card, copy this snipptet and past it the last empty column:
+Now we'll add an Utilization Bar Card, copy this snipptet and paste it into the last empty column:
 
 ```html
 <!-- Utilization Bar Card -->
@@ -492,7 +493,7 @@ Now it's the trun to add an Utilization Bar Card, copy this snipptet and past it
 
 ## Responsive
 
-As I mention before Bootstrap and PatternFly are reponsive, try now to resize the browser window and see how the content reacomodates as it hits the brakepoints.
+As we mentioned before, both Bootstrap and PatternFly are reponsive;  try resizing the browser window and see how the content adjusts as it hits the brakepoints.
 
 ## Javascript
 
@@ -500,13 +501,13 @@ Brian will write something about adding D3, C3, patternfly, jquery, bootstrap an
 
 ## Customize your app
 
-The best way to customize patternfly styles is to extendend it instead of overwritting it. By extending PatternFly's and Bootstrap's styles, you'll be able to use and change all their mixing and variables.
+The best way to customize patternfly styles is to extend it instead of overwritting it. By extending PatternFly's and Bootstrap's styles, you'll be able to use and change all their mixing and variables.
 
 Bootstrap and PatternFly use Less to preprocess their CSS. This repo is setup to compile LESS into CSS.
 
 ### Load the compiled CSS
 
-On your HTML comment out patternfly's CSS and uncoment the compiled CSS
+In index.html file, comment out patternfly's CSS and uncomment the compiled CSS
 
 ```html
 
