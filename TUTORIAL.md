@@ -493,7 +493,7 @@ Now we'll add an Utilization Bar Card, copy this snipptet and paste it into the 
 
 ## Responsive
 
-As we mentioned before, both Bootstrap and PatternFly are reponsive;  try resizing the browser window and see how the content adjusts as it hits the brakepoints.
+As we mentioned before, both Bootstrap and PatternFly are reponsive;  try resizing the browser window and see how the content adjusts as it hits the breakpoints.
 
 ## Javascript
 
