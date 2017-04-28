@@ -497,23 +497,34 @@ As we mentioned before, both Bootstrap and PatternFly are reponsive;  try resizi
 
 ## Javascript
 
-TODO: write something about adding D3, C3, patternfly, jquery, bootstrap and matchhieght JS
+Next we will add some javascript dependencies to tie all this together.  PatternFly is a design system; it provides (amongst other things) a collection of reusable frontend patterns. The CSS is the implementation of the pattern's visuals, and the js is the impl of its behaviours.
 
-```
-npm install --save c3 "d3@~3.5" jquery bootstrap jquery-match-height
-```
+The javascript libraries we will add are:
+
+<dl>
+  <dt>d3</dt>
+    <dd>library for visualizing data using web standards.</dd>
+  <dt>c3</dt>
+    <dd>c3 is a D3-based reusable chart library</dd>
+  <dt>jquery-match-height</dt>
+    <dd>matchHeight makes the height of all selected elements exactly equal.</dd>
+  <dt>jQuery</dt>
+    <dd>We include bootstrap in this vanilla example for DOM manipulation and its plugin mechanism.  Consider using one of the PatternFly framework libraries (angular, react, webcomponents) for alternate implementations.</dd>
+  <dt>bootstrap</dt>
+    <dd>The PatternFly jQuery plugins leverage the bootstrap implementations for providing pattern behaviour.</dd>
+</dl>
 
 ```
 <!-- JS -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/patternfly/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/patternfly/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
 
 <!-- C3, D3 - Charting Libraries -->
-<script src="node_modules/d3/d3.min.js"></script>
-<script src="node_modules/c3/c3.min.js"></script>
+<script src="node_modules/patternfly/node_modules/d3/d3.min.js"></script>
+<script src="node_modules/patternfly/node_modules/c3/c3.min.js"></script>
 
-<script src="node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+<script src="node_modules/patternfly/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
 ```
 
 ## Customize your app
