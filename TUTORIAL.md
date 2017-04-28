@@ -497,7 +497,24 @@ As we mentioned before, both Bootstrap and PatternFly are reponsive;  try resizi
 
 ## Javascript
 
-Brian will write something about adding D3, C3, patternfly, jquery, bootstrap and matchhieght JS
+TODO: write something about adding D3, C3, patternfly, jquery, bootstrap and matchhieght JS
+
+```
+npm install --save c3 "d3@~3.5" jquery bootstrap jquery-match-height
+```
+
+```
+<!-- JS -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
+
+<!-- C3, D3 - Charting Libraries -->
+<script src="node_modules/d3/d3.min.js"></script>
+<script src="node_modules/c3/c3.min.js"></script>
+
+<script src="node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+```
 
 ## Customize your app
 
