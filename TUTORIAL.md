@@ -18,7 +18,7 @@ We will use the browsersync tool to serve and refresh our web content while we a
 Start browsersync by running:
 
 ```bash
-gulp
+npm start
 ```
 
 This will start a server at [http://localhost:3000/](http://localhost:3000/) and it will auto fresh every time you modify your HTML or CSS.
